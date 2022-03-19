@@ -50,7 +50,7 @@ header>div{
   }
 }
 text{
-    font-size:18px;
+    font-size:12px;
 }
 nav{
     margin-bottom:2em;
@@ -98,6 +98,7 @@ section>div>#Para{
     margin-top: 30px;
     height:300px;
     width:450px;
+    box-shadow: 10px 10px 10px 20px rgba(3, 3, 3, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 footer{
     height:60px;
