@@ -1,0 +1,114 @@
+
+/* ********** Body Design ******* */
+
+#body{
+    margin:0px;
+    padding:0px;
+    background-color: lightblue;
+}
+
+/* ********* Header/Title Design ***** */
+header>div{
+    height:3em;
+    width:auto;
+    background-color:lightblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    position:fixed;
+    margin-top:0;
+    width:100%;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #0a94cae7 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 100px;
+  margin-bottom: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+text{
+    font-size:18px;
+}
+nav{
+    margin-bottom:2em;
+}
+@import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
+
+svg{font-weight:bold;max-width:600px;height:100%;}
+
+section>div{
+    text-align:center;
+}
+
+#para-design {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, green, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+section>div>#Para{
+    font-size:30px;
+    color:#000;
+}
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    height:300px;
+    width:450px;
+}
+footer{
+    height:60px;
+    background-color:rgb(51, 42, 42);
+    text-align: center;
+    margin-top:1em;
+}
+footer>h4{
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:6;
+    padding-top:25px;
+    font-size:18px;
+}
