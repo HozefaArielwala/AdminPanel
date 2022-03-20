@@ -15,11 +15,20 @@ header>div{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* ****** Navigation bar ******** */
+
 .navbar{
     position:fixed;
     margin-top:0;
     width:100%;
 }
+nav{
+  margin-bottom:2em;
+}
+
+/*  ******* Section CSS ***** */
+
 .animate-charcter
 {
    text-transform: uppercase;
@@ -52,9 +61,7 @@ header>div{
 text{
     font-size:12px;
 }
-nav{
-    margin-bottom:2em;
-}
+
 @import url(https://fonts.googleapis.com/css?family=Cabin+Condensed);
 
 svg{font-weight:bold;max-width:600px;height:100%;}
@@ -91,6 +98,8 @@ section>div>#Para{
     }
   }
 
+          /**************** Image CSS ************/
+
   img{
     display: block;
     margin-left: auto;
@@ -100,6 +109,8 @@ section>div>#Para{
     width:450px;
     box-shadow: 10px 10px 10px 20px rgba(3, 3, 3, 0.356), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+          /************* Footer CSS ***********/
 footer{
     height:60px;
     background-color:rgb(51, 42, 42);
