@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
   </head>
   <body>
+
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Login Form</span></div>
-        <form name="loginform" onsubmit="return Validate()">
+        <form name="loginform" action="index.html" onsubmit="return Validate()">
           <div class="row">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="username" name="username" required>
           </div>
+          <div id="usererror" style="color:red;"></div>
           <div class="row">
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="password"required>
           </div>
+          <div id="passerror" style="color:red;"></div>
           <div class="pass"><a href="#">Forgot password?</a></div>
           <div class="row button">
             <input type="submit" value="Login">
@@ -30,23 +33,23 @@
       </div>
     </div>
     <script>
+
         function Validate(){
             var username=document.loginform.username.value;
             var password=document.loginform.password.value;
-
             if(username=="student")
             {
                 if(password=="student"){
                     return true
                 }
                 else{
-                    alert("Enter Correct Password");
-                    header("Location: Login-Page.html");
+                    document.getElementById("passerror").innerHTML="Password is Wrong";
+                    return false;
                 }
             }
             else{
-                alert("Please Enter the corect Username");
-                header("Location: Login-Page.html");
+              document.getElementById("usererror").innerHTML="Username is Wrong";
+              return false;
             }
         }
     </script>
