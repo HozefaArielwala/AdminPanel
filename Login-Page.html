@@ -23,12 +23,11 @@
             <i class="fas fa-lock"></i>
             <input type="password" placeholder="Password" name="password"required>
           </div>
-          <div id="passerror" style="color:red;"></div>
-          <div class="pass"><a href="#">Forgot password?</a></div>
+          <div class="pass" onclick="forgot()"><a href="#">Forgot password?</a></div>
           <div class="row button">
             <input type="submit" value="Login">
           </div>
-          <div class="signup-link">Not a member? <a href="Login-Page.html">Signup now</a></div>
+          <div class="signup-link">Not a member? <a href="registration.html">Signup now</a></div>
         </form>
       </div>
     </div>
@@ -40,10 +39,10 @@
             if(username=="student")
             {
                 if(password=="student"){
-                    return true
+                    return true;
                 }
                 else{
-                    document.getElementById("passerror").innerHTML="Password is Wrong";
+                    document.getElementById("usererror").innerHTML="Password is Wrong";
                     return false;
                 }
             }
@@ -51,6 +50,9 @@
               document.getElementById("usererror").innerHTML="Username is Wrong";
               return false;
             }
+        }
+        function forgot(){
+          alert("Username=student\nPassword=student")
         }
     </script>
   </body>
