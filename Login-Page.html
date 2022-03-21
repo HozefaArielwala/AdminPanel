@@ -12,7 +12,7 @@
     <div class="container">
       <div class="wrapper">
         <div class="title"><span>Login Form</span></div>
-        <form name="loginform" action="index.html" onsubmit="return Validate()">
+        <form name="loginform" onsubmit="return Validate()">
           <div class="row">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="username" name="username" required>
@@ -25,7 +25,7 @@
           <div class="row button">
             <input type="submit" value="Login">
           </div>
-          <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+          <div class="signup-link">Not a member? <a href="Login-Page.html">Signup now</a></div>
         </form>
       </div>
     </div>
@@ -40,11 +40,13 @@
                     return true
                 }
                 else{
-                    alert("Enter Correct Password")
+                    alert("Enter Correct Password");
+                    header("Location: Login-Page.html");
                 }
             }
             else{
                 alert("Please Enter the corect Username");
+                header("Location: Login-Page.html");
             }
         }
     </script>
