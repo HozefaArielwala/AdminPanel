@@ -10,43 +10,49 @@
 <body>
     <div class="wrapper">
         <div class="form_container">
-          <form name="form">
+          <form name="form" onsubmit="return Validate()">
             <div class="heading">
                 <h2>Registion Form</h2>
              </div>
              <div class="form_wrap fullname">
                 <div class="form_item">
                     <label>First Name</label>
-                    <input type="text"> 
+                    <input type="text" name="first_name">
                 </div>
+                <br>
+                <div id="first_name1" style="color:red;"></div>
                 <div class="form_item">
                     <label>Last Name</label>
-                    <input type="text">
+                    <input type="text" name="last_name">
                 </div>
               
               </div>
+              <br>
+              <div id="last_name1" style="color:red;"></div>
               <div class="form_wrap">
                 <div class="form_item">
                   <label>Email Address</label>
-                  <input type="text">
+                  <input type="text" name="email">
                 </div>
               </div>
+              <br>
+              <div id="email" style="color:red;"></div>
               <div class="form_wrap">
                 <div class="form_item">
                   <label>Phone</label>
-                  <input type="text">
+                  <input type="text" name="phone_no">
                </div>
              </div>
              <div class="form_wrap">
                 <div class="form_item">
                   <label>Address</label>
-                  <input type="text">
+                  <input type="text" name="address">
                 </div>
               </div>
               <div class="form_wrap">
                 <div class="form_item">
                   <label>Website URL</label>
-                  <input type="text">
+                  <input type="text" id="url">
                 </div>
               </div>
              <div class="form_wrap select_box">
@@ -103,5 +109,25 @@
          </form>
         </div>
        </div>
+       <script>
+        
+        function Validate(){
+          var first_name1=document.form.first_name.value;
+          var last_name1=document.form.last_name.value;
+          var email=document.form.email.value;
+          var phone_number=document.form.phone_no.value;
+          if((first_name1.length<3) || (!first_name1)){
+            document.getElementById("first_name1").innerHTML="Enter Valid First Name.";
+            return false;
+          }
+          else if((last_name1.length<3) || (!last_name1)){
+            document.getElementById("last_name1").innerHTML="Enter Valid Last Name.";
+            return false;
+          }
+          else{
+            return true;
+          }
+        }
+       </script>
 </body>
 </html>
