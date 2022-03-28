@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Registration</title>
     <link rel="stylesheet" href="css3.css">
-    <script type="text/javascript" src="js/javascript.js"</script>
+    <script type="text/javascript" src="js/javascript.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="form_container">
-          <form name="form" action="index.html" onsubmit="return (Validate() && validURL() && ValidateEmail())">
+          <form name="form" action="http://localhost/index.php" method="post" onsubmit="return (Validate() && validURL() && ValidateEmail())">
             <div class="heading">
                 <h2>Registion Form</h2>
              </div>
@@ -55,19 +56,19 @@
 
                 <div class="form_item">
                   <label>City</label>
-                     <select name="country">
-                    <option>Mumbai</option>
-                    <option>Pune</option>
-                    <option>Hyderabad</option>
-                    <option>Bangalore</option>
-                    <option>Kolkata</option>
-                    <option>Delhi</option>
-                    <option>Patna</option>
-                    <option>Lucknow</option>
-                    <option>Jammu</option>
-                    <option>Kashmir</option>
-                    <option>Guwahati</option>
-                    <option>Jaipur</option>
+                     <select name="city">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Lucknow">Lucknow</option>
+                    <option value="Jammu">Jammu</option>
+                    <option value="Kashmir">Kashmir</option>
+                    <option value="Guwahati">Guwahati</option>
+                    <option value="Jaipur">Jaipur</option>
                      </select>
                 </div>
               
@@ -75,27 +76,27 @@
                 <div class="form_item">
                   <label>Country</label>
                      <select name="country">
-                    <option>India</option>
+                    <option value="India">India</option>
                      </select>
                </div>
                <div class="form_item">
                 <label>State</label>
-                   <select name="country">
-                  <option>Maharashtra</option>
-                  <option>Uttarakhand</option>
-                  <option>Madhya Pradesh</option>
-                  <option>Uttar Pradesh</option>
+                   <select name="state">
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="Madhya-Pradesh">Madhya-Pradesh</option>
+                  <option value="Uttar-Pradesh">Uttar-Pradesh</option>
                    </select>
              </div>
               
               </div>
               <div class="form_item">
                 <label>Industry</label>
-                   <select name="country">
-                  <option>IT</option>
-                  <option>Accounts</option>
-                  <option>Sales</option>
-                  <option>Health Care</option>
+                   <select name="industry">
+                  <option value="IT">IT</option>
+                  <option value="Accounts">Accounts</option>
+                  <option value="Sales">Sales</option>
+                  <option value="Health-Care">Health-Care</option>
 
                    </select>
              </div>
@@ -105,6 +106,5 @@
          </form>
         </div>
        </div>
-      
 </body>
 </html>
